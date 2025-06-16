@@ -21,7 +21,6 @@ def value_of_card(card):
         return 10
     else :
         return int(card)
-    pass
 
 
 def higher_card(card_one, card_two):
@@ -41,7 +40,6 @@ def higher_card(card_one, card_two):
     else :
         return card_one,card_two
 
-    pass
 
 
 def value_of_ace(card_one, card_two):
@@ -61,7 +59,6 @@ def value_of_ace(card_one, card_two):
         return 11
     else:
         return 1
-    pass
 
 
 def is_blackjack(card_one, card_two):
@@ -78,7 +75,6 @@ def is_blackjack(card_one, card_two):
         return True
     else :
         return False                                       
-    pass
 
 
 def can_split_pairs(card_one, card_two):
@@ -88,9 +84,6 @@ def can_split_pairs(card_one, card_two):
     :return: bool - can the hand be split into two pairs? (i.e. cards are of the same value).
     """
     return value_of_card(card_one) == value_of_card(card_two)
-     
-
-    pass
 
 
 def can_double_down(card_one, card_two):
@@ -102,4 +95,3 @@ def can_double_down(card_one, card_two):
     total = value_of_card(card_one)+value_of_card(card_two)
     return True if total in [9,10,11] else False
 
-    pass
